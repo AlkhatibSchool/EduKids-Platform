@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "dist/activity-project/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/dist/activity-project/index.html" }
+  ]
+}
